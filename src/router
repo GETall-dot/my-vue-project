@@ -1,0 +1,44 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from './components/views/home.vue'
+import Login from './components/views/login.vue'
+import Regist from './components/views/regist.vue'
+// Deleted:import HeaderView from './components/views/HeaderView.vue'
+// Deleted:import UserCenter from './components/views/src/components/usercent/usercent.vue'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: Home
+    },
+     {
+      path: '/home',
+      name: 'HomeRedirect',
+      component: Home
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/regist',
+      name: 'Regist',
+      component: Regist
+    },
+    {
+      path: '/header',
+      name: 'HeaderView',
+      component: () => import('./components/views/HeaderView.vue')
+    },
+    {
+      path: '/usercent',
+      name: 'UserCenter',
+      component: () => import('./components/views/src/components/usercent/usercent.vue')
+    }
+  ]
+})
