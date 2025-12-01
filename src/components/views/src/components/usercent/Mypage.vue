@@ -1,5 +1,5 @@
 <template>
- <div id="my">
+ <div id="mypage">
     <el-tabs v-model="activeName" @tab-click="handleClick">
     <el-tab-pane label="待付款" name="first">
 
@@ -26,7 +26,7 @@
 </template>
 <script>
   export default {
-    name: 'my',
+    name: 'MyPage',
     props: {
         product:
         {

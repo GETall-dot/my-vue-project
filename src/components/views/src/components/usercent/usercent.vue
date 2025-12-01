@@ -62,6 +62,9 @@
           <!-- 我的订单 -->
           <el-tab-pane label="我的订单" name="orders">
             <div class="order-list">
+              <div>
+                <mypage/>
+              </div>
               <el-empty description="暂无订单" v-if="orders.length === 0"></el-empty>
               <div v-else>
                 <!-- 订单列表内容 -->
@@ -241,8 +244,12 @@
 </template>
 
 <script>
+import mypage from './Mypage.vue'
 export default {
   name: 'UserCenter',
+  components: {
+    mypage
+  },
   data() {
     return {
       activeTab: 'profile',
