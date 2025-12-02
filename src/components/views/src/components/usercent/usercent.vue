@@ -254,11 +254,11 @@ export default {
     return {
       activeTab: 'profile',
       user: {
-        id: '10001',
-        nickname: '用户昵称',
+        id: '',
+        nickname: '',
         avatar: '',
         balance: 0,
-        phone: '138****5678'
+        phone: ''
       },
       profileForm: {
         phone: '',
@@ -362,6 +362,7 @@ export default {
       ],
       // 充值相关数据
       selectedAmount: 0,
+      
       customAmount: '',
       // 收藏相关数据
       favorites: [],

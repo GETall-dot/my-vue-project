@@ -5,6 +5,7 @@ import Login from './components/views/login.vue'
 import Regist from './components/views/regist.vue'
 // Deleted:import HeaderView from './components/views/HeaderView.vue'
 // Deleted:import UserCenter from './components/views/src/components/usercent/usercent.vue'
+// Deleted:import my from './components/views/src/components/usercent/my.vue'
 
 Vue.use(Router)
 
